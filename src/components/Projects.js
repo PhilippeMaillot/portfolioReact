@@ -4,6 +4,12 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/non-disponible.webp";
 import projImg4 from "../assets/img/SSR.jpg";
+import projImg5 from "../assets/img/calcul.png";
+import projImg6 from "../assets/img/lego.png";
+import projImg7 from "../assets/img/todo.png";
+import projImg8 from "../assets/img/quote.png";
+import projImg9 from "../assets/img/pfc.png";
+import projImg10 from "../assets/img/html.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -68,42 +74,42 @@ export const Projects = () => {
     {
       title: "Calculatrice",
       description: "Création d'une calculatrice en JS",
-      imgUrl: projImg3,
+      imgUrl: projImg5,
       docUrl: "https://drive.google.com/file/d/1npO5riwE-tAL_dJXHYOd10YsL2hXWFEx/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "HTML Translator",
       description: "Traducteur de code HTML",
-      imgUrl: projImg3,
+      imgUrl: projImg10,
       docUrl: "https://drive.google.com/file/d/1E3NwpYLvKxmPi0is83qWhLJ_Ct2WTk4N/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Pierre, Feuille, Ciseaux",
       description: "Création d'un pierre, feuille, ciseaux en JS",
-      imgUrl: projImg3,
+      imgUrl: projImg9,
       docUrl: "https://drive.google.com/file/d/1hMcFHV8sbLW2Y6_k2zLcwHOfqk9fuqBF/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Random Quote",
       description: "Generateur de citations aléatoires",
-      imgUrl: projImg3,
+      imgUrl: projImg8,
       docUrl: "https://drive.google.com/file/d/1xeQCe8dhHl42dB9pj44Czr9WPLYm9NuK/view?usp=share_link",
       target: "_blank",
     },
     {
       title: "Site web Lego",
       description: "Premier projet de l'année, Site web Lego",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
       docUrl: "https://drive.google.com/file/d/1v4CmwV1N9rJIgu0HTOE4BjZbT55VuA_S/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Todo list",
       description: "To Do list en JS",
-      imgUrl: projImg3,
+      imgUrl: projImg7,
       docUrl: "https://drive.google.com/file/d/1dQE0CdNDpNvvH5yMPKYR7bUOyuEeyl18/view?usp=sharing",
       target: "_blank",
     },

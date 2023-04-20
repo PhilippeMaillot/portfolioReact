@@ -1,5 +1,4 @@
 import { Col, Button } from "react-bootstrap";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const ProjectCard = ({ title, description, imgUrl, docUrl }) => {
   return (
@@ -11,7 +10,7 @@ export const ProjectCard = ({ title, description, imgUrl, docUrl }) => {
           <span>{description}</span>
         </div>
       </div>
-      <Button href={docUrl} download variant="primary" target='_blank' style={{ backgroundImage: `url(${colorSharp2})` }}>Télécharger</Button>
+      <Button href={docUrl} download variant="primary" target='_blank' className="btn">Télécharger</Button>
     </Col>
   )
 }

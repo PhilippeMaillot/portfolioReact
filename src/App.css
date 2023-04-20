@@ -582,3 +582,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 200px; /* ou toute autre hauteur souhaitée */
   object-fit: cover;
 }
+.btn {
+  margin-bottom: 20px;
+}
