@@ -2,7 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/non-disponible.webp";
+import projImg4 from "../assets/img/SSR.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,57 +12,126 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "GLPI",
+      description: "Ticketing",
       imgUrl: projImg1,
+      docUrl: "/doc/GLPI.pdf",
+      target: "_blank",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Site Librairie",
+      description: "Création d'un site librairie reprenant les livres de l'api books de google",
       imgUrl: projImg2,
+      docUrl: "/doc/Doc_librairie.pdf",
+      target: "_blank",
+    },
+  ];
+  const projectsSecondTab = [
+    {
+      title: "Projet AP 1",
+      description: "Création d'une entreprise fictive du nom de SSR Pro.",
+      imgUrl: projImg4,
+      docUrl: "/doc/ap1.zip",
+      target: "_blank",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Projet AP 2",
+      description: "Proposition des solutions aux problématiques",
       imgUrl: projImg3,
+      docUrl: "/doc/projet1.pdf",
+      target: "_blank",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Projet AP 3",
+      description: "Mise en place des solutions pour le client",
+      imgUrl: projImg3,
+      docUrl: "./documentation/projet1.pdf",
+      target: "_blank",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Projet AP 4",
+      description: "Tester et améliorer des solutions en existantes",
+      imgUrl: projImg3,
+      docUrl: "./documentation/projet1.pdf",
+      target: "_blank",
+    },
+    
+  ];
+  const projectsThirdTab = [
+    {
+      title: "Site librairie",
+      description: "Création d'un site librairie reprenant les livres de l'api books de google",
       imgUrl: projImg2,
+      docUrl: "/doc/TpLibrairie.rar",
+      target: "_blank",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Calculatrice",
+      description: "Création d'une calculatrice en JS",
       imgUrl: projImg3,
+      docUrl: "/doc/Calculatrice.zip",
+      target: "_blank",
+    },
+    {
+      title: "HTML Translator",
+      description: "Traducteur de code HTML",
+      imgUrl: projImg3,
+      docUrl: "/doc/HTMLTranslator.zip",
+      target: "_blank",
+    },
+    {
+      title: "Pierre, Feuille, Ciseaux",
+      description: "Création d'un jeu pierre, feuille, ciseaux en JS",
+      imgUrl: projImg3,
+      docUrl: "/doc/PierreFeuilleCiseaux.zip",
+      target: "_blank",
+    },
+    {
+      title: "Random Quote",
+      description: "Generateur de citations aléatoires",
+      imgUrl: projImg3,
+      docUrl: "/doc/RandomQuote.zip",
+      target: "_blank",
+    },
+    {
+      title: "Site web Lego",
+      description: "Premier projet de l'année, Site web Lego",
+      imgUrl: projImg3,
+      docUrl: "/doc/SiteLego.zip",
+      target: "_blank",
+    },
+    {
+      title: "Todo list",
+      description: "To Do list en JS",
+      imgUrl: projImg3,
+      docUrl: "/doc/ToDoList.zip",
+      target: "_blank",
     },
   ];
 
+   
+  
+
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>Projets</h2>
+                <br></br>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Documentation</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Projets AP</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">TP's</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -72,19 +142,50 @@ export const Projects = () => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...project}
-                                />
+                                title={project.title}
+                                description={project.description}
+                                imgUrl={project.imgUrl}
+                                docUrl={project.docUrl}
+                              /> 
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                        {
+                          projectsSecondTab.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                imgUrl={project.imgUrl}
+                                docUrl={project.docUrl}
+                              /> 
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                    <Row>
+                        {
+                          projectsThirdTab.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                imgUrl={project.imgUrl}
+                                docUrl={project.docUrl}
+                              /> 
+                            )
+                          })
+                        }
+                      </Row>
+            </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}

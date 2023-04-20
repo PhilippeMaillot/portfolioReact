@@ -1,59 +1,17 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
-  return (
+    return (
     <section className="skill" id="skills">
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                        </Carousel>
+                        <h2>IPSSI</h2>
+                        <p>L'IPSSI est une école d'informatique située à Saint Quentin en Yvelines. Elle propose des formations en informatique allant de Bac+2 à Bac+5. Les domaines de formation comprennent le développement web, la cybersécurité, l'intelligence artificielle, le big data, et bien plus encore.</p>
+                        <p>Les cours sont dispensés par des professionnels expérimentés et des experts du domaine de l'informatique. L'IPSSI dispose également d'un réseau d'entreprises partenaires pour aider les étudiants à trouver des stages et des opportunités professionnelles.</p>
+                        <p>Si vous êtes intéressé par une carrière dans le domaine de l'informatique, l'IPSSI est l'endroit idéal pour vous. Pour plus d'informations, veuillez visiter le site web de l'école : <a href="https://ecole-ipssi.com/ecole-informatique-saint-quentin-en-yvelines/" target="_blank">https://ecole-ipssi.com</a></p>
                     </div>
                 </div>
             </div>
