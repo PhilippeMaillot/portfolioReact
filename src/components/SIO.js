@@ -6,39 +6,44 @@ const SIO = () => {
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp" id='SIO'>
         <Row>
-        
           <Col lg={12} md={6} xl={5}>
-            <h3>Présentation BTS SIO<br/> & de ses spécialités</h3>
+            <h3>Présentation BTS SIO & de ses spécialités</h3>
           </Col>
           <Col md={6} xl={7}>
-            <div>
-              <h2>Option SLAM</h2>
-              <p>Débouchés :</p>
-              <ul>
-                <li>Développeur d'applications informatiques</li>
-                <li>Développeur informatique</li>
-                <li>Analyste d'applications ou d'études</li>
-                <li>Analyste programmeur</li>
-                <li>Chargé d'études informatiques</li>
-                <li>Programmeur analyste</li>
-                <li>Programmeur d'applications</li>
-                <li>Responsable des services applicatifs</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Option SISR</h2>
-              <p>Débouchés :</p>
-              <ul>
-                <li>Technicien de production</li>
-                <li>Technicien d’infrastructure</li>
-                <li>Technicien réseau et télécoms</li>
-                <li>Technicien systèmes et réseaux</li>
-                <li>Administrateur systèmes et réseaux</li>
-                <li>Support systèmes et réseaux</li>
-                <li>Pilote d’exploitation</li>
-                <li>Informaticien support et déploiement</li>
-              </ul>
-            </div>
+            <Row>
+              <Col md={6}>
+                <div>
+                  <h2>Option SLAM</h2>
+                  <p>Débouchés :</p>
+                  <ul>
+                    <li>Développeur d'applications informatiques</li>
+                    <li>Développeur informatique</li>
+                    <li>Analyste d'applications ou d'études</li>
+                    <li>Analyste programmeur</li>
+                    <li>Chargé d'études informatiques</li>
+                    <li>Programmeur analyste</li>
+                    <li>Programmeur d'applications</li>
+                    <li>Responsable des services applicatifs</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col md={6}>
+                <div>
+                  <h2>Option SISR</h2>
+                  <p>Débouchés :</p>
+                  <ul>
+                    <li>Technicien de production</li>
+                    <li>Technicien d’infrastructure</li>
+                    <li>Technicien réseau et télécoms</li>
+                    <li>Technicien systèmes et réseaux</li>
+                    <li>Administrateur systèmes et réseaux</li>
+                    <li>Support systèmes et réseaux</li>
+                    <li>Pilote d’exploitation</li>
+                    <li>Informaticien support et déploiement</li>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
             <hr />
             <div>
               <h1>Le Developpement Web</h1>

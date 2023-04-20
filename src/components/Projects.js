@@ -81,9 +81,9 @@ export const Projects = () => {
     },
     {
       title: "Pierre, Feuille, Ciseaux",
-      description: "https://drive.google.com/file/d/1hMcFHV8sbLW2Y6_k2zLcwHOfqk9fuqBF/view?usp=sharing",
+      description: "Création d'un pierre, feuille, ciseaux en JS",
       imgUrl: projImg3,
-      docUrl: "/doc/PierreFeuilleCiseaux.zip",
+      docUrl: "https://drive.google.com/file/d/1hMcFHV8sbLW2Y6_k2zLcwHOfqk9fuqBF/view?usp=sharing",
       target: "_blank",
     },
     {
