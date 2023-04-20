@@ -15,14 +15,14 @@ export const Projects = () => {
       title: "GLPI",
       description: "Ticketing",
       imgUrl: projImg1,
-      docUrl: "/doc/GLPI.pdf",
+      docUrl: "https://drive.google.com/file/d/1i2J-giYocEFnajglyzuVCEmR7CR_X1n7/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Site Librairie",
       description: "Création d'un site librairie reprenant les livres de l'api books de google",
       imgUrl: projImg2,
-      docUrl: "/doc/Doc_librairie.pdf",
+      docUrl: "https://drive.google.com/file/d/14D6h8-mPlN2p57nYPgF3Kv_LLYjUol-N/view?usp=sharing",
       target: "_blank",
     },
   ];
@@ -31,28 +31,28 @@ export const Projects = () => {
       title: "Projet AP 1",
       description: "Création d'une entreprise fictive du nom de SSR Pro.",
       imgUrl: projImg4,
-      docUrl: "/doc/ap1.zip",
+      docUrl: "https://drive.google.com/file/d/1mD0YKSP_t7nVX7uOkKrx4vQXkAqnKJ6k/view?usp=share_link",
       target: "_blank",
     },
     {
       title: "Projet AP 2",
       description: "Proposition des solutions aux problématiques",
       imgUrl: projImg3,
-      docUrl: "/doc/projet1.pdf",
+      docUrl: "",
       target: "_blank",
     },
     {
       title: "Projet AP 3",
       description: "Mise en place des solutions pour le client",
       imgUrl: projImg3,
-      docUrl: "./documentation/projet1.pdf",
+      docUrl: "",
       target: "_blank",
     },
     {
       title: "Projet AP 4",
       description: "Tester et améliorer des solutions en existantes",
       imgUrl: projImg3,
-      docUrl: "./documentation/projet1.pdf",
+      docUrl: "",
       target: "_blank",
     },
     
@@ -62,26 +62,26 @@ export const Projects = () => {
       title: "Site librairie",
       description: "Création d'un site librairie reprenant les livres de l'api books de google",
       imgUrl: projImg2,
-      docUrl: "/doc/TpLibrairie.rar",
+      docUrl: "https://drive.google.com/file/d/1NtxFZA-CeGfreweG6DPbBJCx43YZ_8jp/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Calculatrice",
       description: "Création d'une calculatrice en JS",
       imgUrl: projImg3,
-      docUrl: "/doc/Calculatrice.zip",
+      docUrl: "https://drive.google.com/file/d/1npO5riwE-tAL_dJXHYOd10YsL2hXWFEx/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "HTML Translator",
       description: "Traducteur de code HTML",
       imgUrl: projImg3,
-      docUrl: "/doc/HTMLTranslator.zip",
+      docUrl: "https://drive.google.com/file/d/1E3NwpYLvKxmPi0is83qWhLJ_Ct2WTk4N/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Pierre, Feuille, Ciseaux",
-      description: "Création d'un jeu pierre, feuille, ciseaux en JS",
+      description: "https://drive.google.com/file/d/1hMcFHV8sbLW2Y6_k2zLcwHOfqk9fuqBF/view?usp=sharing",
       imgUrl: projImg3,
       docUrl: "/doc/PierreFeuilleCiseaux.zip",
       target: "_blank",
@@ -90,28 +90,24 @@ export const Projects = () => {
       title: "Random Quote",
       description: "Generateur de citations aléatoires",
       imgUrl: projImg3,
-      docUrl: "/doc/RandomQuote.zip",
+      docUrl: "https://drive.google.com/file/d/1xeQCe8dhHl42dB9pj44Czr9WPLYm9NuK/view?usp=share_link",
       target: "_blank",
     },
     {
       title: "Site web Lego",
       description: "Premier projet de l'année, Site web Lego",
       imgUrl: projImg3,
-      docUrl: "/doc/SiteLego.zip",
+      docUrl: "https://drive.google.com/file/d/1v4CmwV1N9rJIgu0HTOE4BjZbT55VuA_S/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Todo list",
       description: "To Do list en JS",
       imgUrl: projImg3,
-      docUrl: "/doc/ToDoList.zip",
+      docUrl: "https://drive.google.com/file/d/1dQE0CdNDpNvvH5yMPKYR7bUOyuEeyl18/view?usp=sharing",
       target: "_blank",
     },
   ];
-
-   
-  
-
   return (
     <section className="project" id="projects">
       <Container>

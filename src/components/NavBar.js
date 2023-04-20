@@ -45,9 +45,10 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Accueil</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>IPSSI</Nav.Link>
+              <Nav.Link href="#ipssi" className={activeLink === 'ipssi' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('ipssi')}>IPSSI</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projets</Nav.Link>
-              <Nav.Link href="#SIO" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('SIO')}>BTS SIO</Nav.Link>
+              <Nav.Link href="#veilles" className={activeLink === 'veilles' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('veilles')}>Veilles</Nav.Link>
+              <Nav.Link href="#SIO" className={activeLink === 'SIO' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('SIO')}>BTS SIO</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -55,9 +56,6 @@ export const NavBar = () => {
                 <a href="https://github.com/PhilippeMaillot" target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="mailto:maillotphilippe78@gmail.com"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Contactez moi</span></button>
-              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>

@@ -11,7 +11,7 @@ export const ProjectCard = ({ title, description, imgUrl, docUrl }) => {
           <span>{description}</span>
         </div>
       </div>
-      <Button href={docUrl} download variant="primary" style={{ backgroundImage: `url(${colorSharp2})` }}>Télécharger</Button>
+      <Button href={docUrl} download variant="primary" target='_blank' style={{ backgroundImage: `url(${colorSharp2})` }}>Télécharger</Button>
     </Col>
   )
 }

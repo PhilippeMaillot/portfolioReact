@@ -1,9 +1,9 @@
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
 
-export const Skills = () => {
+export const Ipssi = () => {
     return (
-    <section className="skill" id="skills">
+    <section className="skill" id="ipssi">
         <div className="container">
             <div className="row">
                 <div className="col-12">
