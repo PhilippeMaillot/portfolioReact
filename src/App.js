@@ -5,8 +5,8 @@ import { Banner } from "./components/Banner";
 import { Ipssi } from "./components/Ipssi";
 import { Projects } from "./components/Projects";
 import { Veilles } from "./components/Veilles";
-import { Footer } from "./components/Footer";
 import SIO from './components/SIO';
+import { Competence } from './components/Competence';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Projects />
       <Veilles />
       <SIO />
-      <Footer />
+      <Competence />
     </div>
   );
 }
