@@ -7,6 +7,7 @@ import { Projects } from "./components/Projects";
 import { Veilles } from "./components/Veilles";
 import SIO from './components/SIO';
 import { Competence } from './components/Competence';
+import { Entreprise } from './components/Entreprise';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <Veilles />
       <SIO />
       <Competence />
+      <br></br>
+      <br></br>
+      <Entreprise />
     </div>
   );
 }
