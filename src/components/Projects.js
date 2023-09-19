@@ -44,7 +44,7 @@ export const Projects = () => {
       title: "Projet AP 2",
       description: "Proposition des solutions aux problématiques",
       imgUrl: projImg3,
-      docUrl: "",
+      docUrl: "https://drive.google.com/file/d/1DCMcZacHuEG8_JJWVEHdgJw6ADo8kvna/view?usp=sharing",
       target: "_blank",
     },
     {

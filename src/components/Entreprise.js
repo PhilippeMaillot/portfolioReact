@@ -10,7 +10,7 @@ export const Entreprise = () => {
                     <div className="skill-bx wow zoomIn">
                         <h2>Entrepise</h2>
                         <p>
-  <strong>Aristid</strong> 
+  <strong>Aristid </strong> 
   Spécialiste du retail, l'entreprise crée des outils technologiques adaptés aux besoins des clients et capables de concevoir à grande échelle des offres commerciales personnalisées. Elle digitalise les "process métiers" pour accélérer la transformation et accroître la rentabilité des clients.
 </p>
 
