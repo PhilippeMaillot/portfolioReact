@@ -34,7 +34,7 @@ export const Competence = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Compétences</h2>
-                        <p>Voici les compétences que j'ai pu aquérir durant mes années d'études et de mon stage <a href ="https://drive.google.com/file/d/1Ta_CGfo7Fkpkq5VevPbBcZfaeY4QVyZb/view?usp=sharing" target='_blank'>Tableau de compétences</a></p>
+                        <p>Voici les compétences que j'ai pu aquérir durant mes années d'études et de mon stage <a href ="https://drive.google.com/file/d/1ANDbWNjJuqkqeDsQYoQquUVEXmuxfhh4/view?usp=sharing" target='_blank'>Tableau de compétences</a></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
