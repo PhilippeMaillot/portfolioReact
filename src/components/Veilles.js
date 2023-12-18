@@ -19,7 +19,7 @@ export const Veilles = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Veilles Informatiques</h2>
+                <h2>Veilles Technologiques</h2>
                 <Button href='https://philippemaillot.github.io/portfolio/veilles.html' variant="primary">Acceder aux veilles</Button>
               </div>}
             </TrackVisibility>
