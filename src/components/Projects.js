@@ -10,6 +10,9 @@ import projImg7 from "../assets/img/todo.png";
 import projImg8 from "../assets/img/quote.png";
 import projImg9 from "../assets/img/pfc.png";
 import projImg10 from "../assets/img/html.png";
+import projImg11 from "../assets/img/M2L-ICON.png";
+import projImg12 from "../assets/img/omnimatch.png";
+import projImg13 from "../assets/img/feedly.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -31,6 +34,13 @@ export const Projects = () => {
       docUrl: "https://drive.google.com/file/d/14D6h8-mPlN2p57nYPgF3Kv_LLYjUol-N/view?usp=sharing",
       target: "_blank",
     },
+    {
+      title: "Feedly",
+      description: "Documentation sur Feedly",
+      imgUrl: projImg13,
+      docUrl: "https://drive.google.com/file/d/1vSGqKjwQaWdRxT48O0ZHNpOCLDyzCA4u/view?usp=drive_link",
+      target: "_blank",
+    },
   ];
   const projectsSecondTab = [
     {
@@ -43,15 +53,15 @@ export const Projects = () => {
     {
       title: "Projet AP 2",
       description: "Proposition des solutions aux problématiques",
-      imgUrl: projImg3,
+      imgUrl: projImg11,
       docUrl: "https://drive.google.com/file/d/1DCMcZacHuEG8_JJWVEHdgJw6ADo8kvna/view?usp=sharing",
       target: "_blank",
     },
     {
       title: "Projet AP 3",
-      description: "Mise en place des solutions pour le client",
-      imgUrl: projImg3,
-      docUrl: "",
+      description: "Mise en place des solutions pour le client (En cours)",
+      imgUrl: projImg12,
+      docUrl: "https://github.com/PhilippeMaillot/AP3",
       target: "_blank",
     },
     {
