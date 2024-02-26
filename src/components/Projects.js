@@ -13,6 +13,7 @@ import projImg10 from "../assets/img/html.png";
 import projImg11 from "../assets/img/M2L-ICON.png";
 import projImg12 from "../assets/img/omnimatch.png";
 import projImg13 from "../assets/img/feedly.png";
+import projImg14 from "../assets/img/omnibet-logo.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -59,16 +60,16 @@ export const Projects = () => {
     },
     {
       title: "Projet AP 3",
-      description: "Mise en place des solutions pour le client (En cours)",
+      description: "Mise en place d'une application web pour le client",
       imgUrl: projImg12,
       docUrl: "https://github.com/PhilippeMaillot/AP3",
       target: "_blank",
     },
     {
       title: "Projet AP 4",
-      description: "Tester et améliorer des solutions en existantes",
-      imgUrl: projImg3,
-      docUrl: "",
+      description: "Mise en place d'une application mobile pour le client (En cours)",
+      imgUrl: projImg14,
+      docUrl: "https://github.com/M4tte78/AP4",
       target: "_blank",
     },
     
@@ -133,7 +134,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projets</h2>
-                <p>Voici les compétences que j'ai pu aquérir durant mes années d'études et de mon stage <a href ="https://drive.google.com/file/d/1VpSX_ualNV00X34daZbsWJeTemkI31bS/view?usp=drive_link" target='_blank'>Tableau de compétences</a></p>
+                <p>Voici les compétences que j'ai pu aquérir durant mes années d'études et de mon stage <a href ="https://drive.google.com/file/d/1AUjjeV-S_5cUs83OMxE5eEH7U2_uJjYa/view?usp=sharing" target='_blank'>Tableau de compétences</a></p>
                 <br></br>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
