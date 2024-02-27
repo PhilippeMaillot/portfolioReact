@@ -134,7 +134,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projets</h2>
-                <p>Voici les compétences que j'ai pu aquérir durant mes années d'études et de mon stage <a href ="https://drive.google.com/file/d/1AUjjeV-S_5cUs83OMxE5eEH7U2_uJjYa/view?usp=sharing" target='_blank'>Tableau de compétences</a></p>
+                <p>Voici les compétences que j'ai pu aquérir durant mes années d'études et de mon stage <a href ="https://drive.google.com/file/d/1voX80NzwoBnYtFiEiYlVTPIZA-BvBNYF/view?usp=sharing" target='_blank'>Tableau de compétences</a></p>
                 <br></br>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
