@@ -57,7 +57,7 @@ export const Banner = () => {
                 <span className="tagline">Bienvenue sur mon Portfolio</span>
                 <h1>{`Bonjour, je suis Philippe`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Developeur Web"]'><span className="wrap">{text}</span></span></h1>
                   <p>Bonjour, je m'appelle Philippe Maillot et j'ai 21 ans. Je suis actuellement en première année de BTS SIO (Services Informatiques aux Organisations) à l'école IPSSI, où j'ai choisi l'option SLAM (Solutions Logicielles et Applications Métiers).</p>
-                  <Button href='https://drive.google.com/file/d/1DulbPhxebAI44dgv0mPQAQtwj6-SnXPn/view?usp=sharing' target="_blank" variant="primary">Voir mon CV</Button>
+                  <Button href='https://drive.google.com/file/d/1uXjWkeu3exF8e3a-bGSBRxd_jwqZKaFS/view?usp=sharing' target="_blank" variant="primary">Voir mon CV</Button>
               </div>}
             </TrackVisibility>
           </Col>
