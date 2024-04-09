@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolioReact/static/css/main.d9125900.css",
-    "main.js": "/portfolioReact/static/js/main.a2af7d59.js",
+    "main.js": "/portfolioReact/static/js/main.defc2593.js",
     "static/js/787.7da95b79.chunk.js": "/portfolioReact/static/js/787.7da95b79.chunk.js",
     "static/media/color-sharp.png": "/portfolioReact/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolioReact/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/html.png": "/portfolioReact/static/media/html.d53930193f7aae400ea4.png",
     "static/media/todo.png": "/portfolioReact/static/media/todo.179a4fce822700cc7b1d.png",
+    "static/media/inventaire.png": "/portfolioReact/static/media/inventaire.0b5b37a6dc487620b368.png",
     "static/media/pfc.png": "/portfolioReact/static/media/pfc.be99843dc35efe5d2d7c.png",
     "static/media/M2L-ICON.png": "/portfolioReact/static/media/M2L-ICON.d6364a45227aac1d1b41.png",
     "static/media/banner-bg.png": "/portfolioReact/static/media/banner-bg.cc1273af450504afe755.png",
@@ -17,6 +18,7 @@
     "static/media/calcul.png": "/portfolioReact/static/media/calcul.87d422ecc24cef2ea162.png",
     "static/media/CentraNo2-Medium.ttf": "/portfolioReact/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolioReact/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/postman.png": "/portfolioReact/static/media/postman.6fd1fc524fce1de35ff9.png",
     "static/media/footer-bg.png": "/portfolioReact/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/docker-compose.jpeg": "/portfolioReact/static/media/docker-compose.bef96305e242c2d9a0b6.jpeg",
     "static/media/photovillers.jpg": "/portfolioReact/static/media/photovillers.63510d3b2ebc0a28ce82.jpg",
@@ -39,11 +41,11 @@
     "static/media/arrow2.svg": "/portfolioReact/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolioReact/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.d9125900.css.map": "/portfolioReact/static/css/main.d9125900.css.map",
-    "main.a2af7d59.js.map": "/portfolioReact/static/js/main.a2af7d59.js.map",
+    "main.defc2593.js.map": "/portfolioReact/static/js/main.defc2593.js.map",
     "787.7da95b79.chunk.js.map": "/portfolioReact/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9125900.css",
-    "static/js/main.a2af7d59.js"
+    "static/js/main.defc2593.js"
   ]
 }
