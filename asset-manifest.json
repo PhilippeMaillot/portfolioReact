@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolioReact/static/css/main.d9125900.css",
-    "main.js": "/portfolioReact/static/js/main.defc2593.js",
+    "main.js": "/portfolioReact/static/js/main.2399c0f3.js",
     "static/js/787.7da95b79.chunk.js": "/portfolioReact/static/js/787.7da95b79.chunk.js",
     "static/media/color-sharp.png": "/portfolioReact/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolioReact/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/html.png": "/portfolioReact/static/media/html.d53930193f7aae400ea4.png",
+    "static/media/service.jpg": "/portfolioReact/static/media/service.b845871151ead22a0caa.jpg",
     "static/media/todo.png": "/portfolioReact/static/media/todo.179a4fce822700cc7b1d.png",
     "static/media/inventaire.png": "/portfolioReact/static/media/inventaire.0b5b37a6dc487620b368.png",
     "static/media/pfc.png": "/portfolioReact/static/media/pfc.be99843dc35efe5d2d7c.png",
@@ -26,6 +27,7 @@
     "static/media/header-img.svg": "/portfolioReact/static/media/header-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/project-img2.png": "/portfolioReact/static/media/project-img2.31d6342b0c067f9c5757.png",
     "static/media/omnibet-logo.png": "/portfolioReact/static/media/omnibet-logo.9649e95481f768d2704b.png",
+    "static/media/vm.jpg": "/portfolioReact/static/media/vm.57e22011c35951e013dc.jpg",
     "static/media/omnimatch.png": "/portfolioReact/static/media/omnimatch.fe6a375f8292d57734dc.png",
     "static/media/git-flow.jpg": "/portfolioReact/static/media/git-flow.148a359e3d310002a2a5.jpg",
     "static/media/revicons.eot": "/portfolioReact/static/media/revicons.a77de540a38981833f9e.eot",
@@ -41,11 +43,11 @@
     "static/media/arrow2.svg": "/portfolioReact/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/portfolioReact/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.d9125900.css.map": "/portfolioReact/static/css/main.d9125900.css.map",
-    "main.defc2593.js.map": "/portfolioReact/static/js/main.defc2593.js.map",
+    "main.2399c0f3.js.map": "/portfolioReact/static/js/main.2399c0f3.js.map",
     "787.7da95b79.chunk.js.map": "/portfolioReact/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9125900.css",
-    "static/js/main.defc2593.js"
+    "static/js/main.2399c0f3.js"
   ]
 }
