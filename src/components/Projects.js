@@ -18,6 +18,8 @@ import projImg16 from "../assets/img/git-flow.jpg";
 import projImg15 from "../assets/img/docker-compose.jpeg";
 import projImg17 from "../assets/img/inventaire.png";
 import projImg18 from "../assets/img/postman.png";
+import projImg19 from "../assets/img/vm.jpg";
+import projImg20 from "../assets/img/service.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -79,6 +81,22 @@ export const Projects = () => {
       imgUrl: projImg18,
       docUrl:
         "https://philippemaillot.github.io/portfolio/documents/doc_postman.pdf",
+      target: "_blank",
+    },
+    {
+      title: "Déployer une machine virtuelle",
+      description: "Déploiement d'une machine virtuelle sur un serveur",
+      imgUrl: projImg19,
+      docUrl:
+        "https://philippemaillot.github.io/portfolio/documents/vm.pdf",
+      target: "_blank",
+    },
+    {
+      title: "Déployer un service",
+      description: "déploiement d'un service sur un serveur",
+      imgUrl: projImg20,
+      docUrl:
+        "https://philippemaillot.github.io/portfolio/documents/service.pdf",
       target: "_blank",
     },
   ];
