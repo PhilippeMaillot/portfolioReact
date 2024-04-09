@@ -1,9 +1,22 @@
+import React, { useState } from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Veilles = () => {
+  const [pdfVisible, setPdfVisible] = useState(false);
+  const [pdfUrl, setPdfUrl] = useState("");
+
+  const handleOpenButtonClick = (pdfUrl) => {
+    setPdfUrl(pdfUrl);
+    setPdfVisible(true);
+  };
+
+  const handleCloseButtonClick = () => {
+    setPdfVisible(false);
+  };
+
   return (
     <section className="contact" id="veilles">
       <Container>
@@ -19,9 +32,22 @@ export const Veilles = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Veilles Technologiques</h2>
-                <Button href='https://philippemaillot.github.io/portfolio/veilles.html' variant="primary">Acceder aux veilles</Button>
-              </div>}
+                  <h2>Veilles Technologiques</h2>
+                  <Button onClick={() => handleOpenButtonClick("https://philippemaillot.github.io/portfolio/documents/veille-casaos.pdf")}>CasaOS</Button>
+                  <br></br>
+                  <Button onClick={() => handleOpenButtonClick("https://philippemaillot.github.io/portfolio/documents/unity.pdf")}>Unity</Button>
+                  <br></br>
+                  <Button onClick={() => window.open("https://philippemaillot.github.io/portfolio/documents/google.pdf", "_blank")}>Google Alert</Button>
+                  <br></br>
+                  <Button onClick={() => window.open("https://philippemaillot.github.io/portfolio/documents/feedly.pdf", "_blank")}>Feedly</Button>
+                  {pdfVisible &&
+                    <div>
+                      <Button onClick={handleCloseButtonClick}>Fermer le PDF</Button>
+                      <iframe src={pdfUrl} style={{ width: "100%", height: "600px" }}></iframe>
+                    </div>
+                  }
+                </div>
+              }
             </TrackVisibility>
           </Col>
         </Row>

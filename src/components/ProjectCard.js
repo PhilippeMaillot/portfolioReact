@@ -10,7 +10,7 @@ export const ProjectCard = ({ title, description, imgUrl, docUrl }) => {
           <span>{description}</span>
         </div>
       </div>
-      <Button href={docUrl} download variant="primary" target='_blank' className="btn">Télécharger</Button>
+      <Button href={docUrl} download variant="primary" target='_blank' className="btn">Voir</Button>
     </Col>
   )
 }

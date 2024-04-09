@@ -16,6 +16,8 @@ import projImg13 from "../assets/img/feedly.png";
 import projImg14 from "../assets/img/omnibet-logo.png";
 import projImg16 from "../assets/img/git-flow.jpg";
 import projImg15 from "../assets/img/docker-compose.jpeg";
+import projImg17 from "../assets/img/inventaire.png";
+import projImg18 from "../assets/img/postman.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -63,6 +65,22 @@ export const Projects = () => {
         "https://drive.google.com/file/d/1vUYH9euy1NwUI0eNP78Yqw0t8MFPBNiv/view?usp=sharing",
       target: "_blank",
     },
+    {
+      title: "Inventaire",
+      description: "Inventaire de notre serveur",
+      imgUrl: projImg17,
+      docUrl:
+        "https://philippemaillot.github.io/portfolio/documents/inventaire.pdf",
+      target: "_blank",
+    },
+    {
+      title: "Postman",
+      description: "Test des routes de l'api avec postman",
+      imgUrl: projImg18,
+      docUrl:
+        "https://philippemaillot.github.io/portfolio/documents/doc_postman.pdf",
+      target: "_blank",
+    },
   ];
   const projectsSecondTab = [
     {
@@ -85,7 +103,7 @@ export const Projects = () => {
       title: "Projet AP 3",
       description: "Mise en place d'une application web pour le client",
       imgUrl: projImg12,
-      docUrl: "https://github.com/PhilippeMaillot/AP3",
+      docUrl: "https://github.com/M4tte78/Documentations-AP3-AP4/blob/main/AP3/Documentation-utilisation.pdf",
       target: "_blank",
     },
     {
@@ -173,7 +191,7 @@ export const Projects = () => {
                     Voici les compétences que j'ai pu aquérir durant mes années
                     d'études et de mon stage{" "}
                     <a
-                      href="https://drive.google.com/file/d/1voX80NzwoBnYtFiEiYlVTPIZA-BvBNYF/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1LDhRwl1qN9shxlHczXu19-WKqGdbY2ja/view?usp=sharing"
                       target="_blank"
                     >
                       Tableau de compétences
@@ -193,7 +211,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Projets AP</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">TP's</Nav.Link>
+                        <Nav.Link eventKey="third">TP</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
