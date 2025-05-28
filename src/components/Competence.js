@@ -1,11 +1,6 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Competence = () => {
   const responsive = {
@@ -27,40 +22,84 @@ export const Competence = () => {
     }
   };
 
+  const competences = [
+    { name: "HTML", percent: 50 },
+    { name: "CSS", percent: 50 },
+    { name: "JavaScript", percent: 75 },
+    { name: "React", percent: 75 },
+    { name: "Node.js", percent: 70 },
+    { name: "Express.js", percent: 60 },
+    { name: "PHP", percent: 60 },
+    { name: "SQL", percent: 66 },
+    { name: "C#", percent: 40 },
+    { name: ".NET", percent: 33 },
+    { name: "Blazor", percent: 50 },
+    { name: "Git", percent: 80 },
+    { name: "Docker", percent: 45 },
+  ];
+
+  const CircleSkill = ({ percent }) => {
+    const radius = 50;
+    const stroke = 8;
+    const normalizedRadius = radius - stroke * 0.5;
+    const circumference = normalizedRadius * 2 * Math.PI;
+    const strokeDashoffset = circumference - (percent / 100) * circumference;
+
+    return (
+      <svg height={radius * 2} width={radius * 2}>
+        <circle
+          stroke="#e6e6e6"
+          fill="transparent"
+          strokeWidth={stroke}
+          r={normalizedRadius}
+          cx={radius}
+          cy={radius}
+        />
+        <circle
+          stroke="#00bfff"
+          fill="transparent"
+          strokeWidth={stroke}
+          strokeDasharray={circumference + " " + circumference}
+          style={{ strokeDashoffset, transition: "stroke-dashoffset 0.5s ease" }}
+          r={normalizedRadius}
+          cx={radius}
+          cy={radius}
+        />
+        <text
+          x="50%"
+          y="50%"
+          dominantBaseline="middle"
+          textAnchor="middle"
+          fontSize="16"
+          fill="#fff"
+        >
+          {percent}%
+        </text>
+      </svg>
+    );
+  };
+
   return (
     <section className="skill" id="competences">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Compétences</h2>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>HTML</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>CSS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>JAVA SCRIPT</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>PHP</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>SQL</h5>
-                            </div>
-                        </Carousel>
-                    </div>
-                </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Compétences</h2>
+              <br></br>
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                {competences.map((comp, idx) => (
+                  <div className="item text-center" key={idx}>
+                    <CircleSkill percent={comp.percent} />
+                    <h5 className="mt-2">{comp.name}</h5>
+                  </div>
+                ))}
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  )
-}
+  );
+};

@@ -16,8 +16,6 @@ function App() {
       <Banner />
       <Ipssi />
       <Projects />
-      <Veilles />
-      <SIO />
       <Competence />
       <br></br>
       <br></br>

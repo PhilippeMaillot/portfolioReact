@@ -21,6 +21,9 @@ import projImg18 from "../assets/img/postman.png";
 import projImg19 from "../assets/img/vm.jpg";
 import projImg20 from "../assets/img/service.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg21 from "../assets/img/projImg21.jpg";
+import projImg22 from "../assets/img/qurio.webp";
+import projImg23 from "../assets/img/rpg.webp";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -192,6 +195,30 @@ export const Projects = () => {
       target: "_blank",
     },
   ];
+
+  const projectsFourthTab = [
+  {
+    title: "EasyLifeProvider",
+    description: "Application de creation d'api automatisé et de gestion de données",
+    imgUrl: projImg21, // Choisis une image qui représente bien ton projet
+    docUrl: "https://github.com/PhilippeMaillot/EasyLifeProvider",
+    target: "_blank",
+  },
+  {
+    title: "QurioPoolUpgrades",
+    description: "Projet autour des systèmes d'amélioration de Monster Hunter Rise Sunbreak",
+    imgUrl: projImg22, // Choisis une autre image si tu veux mieux illustrer
+    docUrl: "https://github.com/PhilippeMaillot/QurioPoolUpgrades",
+    target: "_blank",
+  },
+  {
+    title: "Mini RPG",
+    description: "Petit jeux rpg en console pour apprendre les bases du C#", 
+    imgUrl: projImg23, // Choisis une image qui représente bien ton projet
+    docUrl: "https://github.com/PhilippeMaillot/mini-rpg"
+  }
+];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -199,23 +226,9 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projets</h2>
-                  <p>
-                    Voici les compétences que j'ai pu aquérir durant mes années
-                    d'études et de mon stage{" "}
-                    <a
-                      href="https://drive.google.com/file/d/1LDhRwl1qN9shxlHczXu19-WKqGdbY2ja/view?usp=sharing"
-                      target="_blank"
-                    >
-                      Tableau de compétences
-                    </a>
-                  </p>
-                  <br></br>
+                  <br />
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -231,56 +244,40 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="third">TP</Nav.Link>
                       </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="fourth">Projets persos</Nav.Link>
+                      </Nav.Item>
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
+                      className={isVisible ? "animate__animated animate__slideInUp" : ""}
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                title={project.title}
-                                description={project.description}
-                                imgUrl={project.imgUrl}
-                                docUrl={project.docUrl}
-                              />
-                            );
-                          })}
+                          {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projectsSecondTab.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                title={project.title}
-                                description={project.description}
-                                imgUrl={project.imgUrl}
-                                docUrl={project.docUrl}
-                              />
-                            );
-                          })}
+                          {projectsSecondTab.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {projectsThirdTab.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                title={project.title}
-                                description={project.description}
-                                imgUrl={project.imgUrl}
-                                docUrl={project.docUrl}
-                              />
-                            );
-                          })}
+                          {projectsThirdTab.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="fourth">
+                        <Row>
+                          {projectsFourthTab.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
@@ -291,7 +288,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="fond décoratif" />
     </section>
   );
 };
