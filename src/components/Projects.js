@@ -71,14 +71,6 @@ export const Projects = () => {
       target: "_blank",
     },
     {
-      title: "Inventaire",
-      description: "Inventaire de notre serveur",
-      imgUrl: projImg17,
-      docUrl:
-        "https://philippemaillot.github.io/portfolio/documents/inventaire.pdf",
-      target: "_blank",
-    },
-    {
       title: "Postman",
       description: "Test des routes de l'api avec postman",
       imgUrl: projImg18,
